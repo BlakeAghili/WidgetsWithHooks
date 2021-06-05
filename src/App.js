@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Accordion from "./components/Accordion";
 import Search from "./components/Search";
 import DropDown from "./components/DropDown";
+import Translate from "./components/Translate";
 
 const items = [
   { title: "What is Life", content: "I do not know" },
@@ -25,11 +26,7 @@ export default () => {
   const [selected, setSelected] = useState(options[0]);
   return (
     <div>
-      <DropDown
-        options={options}
-        selected={selected}
-        onSelectedChange={setSelected}
-      />
+      <Translate />
     </div>
   );
 };
